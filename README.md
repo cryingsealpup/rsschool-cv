@@ -1,2 +1,2 @@
 # rsschool-cv
-This is repository for rs.chool tasks
+https://cryingsealpup.github.io/rsschool-cv/cv
