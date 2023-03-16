@@ -1,22 +1,29 @@
-# rsschool-cv
-## Ekaterina Radchenko
+# Ekaterina Radchenko
+## Contacts
+**Email**: ekaterinaradchenko@yahoo.com
+**Telegram**: cryingsealpup
 ********* 
-## Contact information:
-**Email**: ekatherinered@gmail.com
+## Profile
+Diligent and study passioned. Ready to hard and brain-wrecking issues
 *********
-## Profile 
-
-*********
-## Skills
-
+## Skills 
++ Data Analysis
++ Python, R
++ Frontend development
++ HTML, CSS, JS
++ Git
++ Linux
 *********
 ## Code examples
 
 *********
 ## Employment history
-
+### System Administrator (2021-2022)
++ IT support, infrastructure management, services integration and data migration (Google Workspace -> Microsoft 365)
 *********
 ## Education
 
 *********
 ## Languages
+**English**: B2
+**German**: A2 
