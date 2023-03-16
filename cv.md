@@ -10,12 +10,12 @@ Diligent and study passioned. Ready to hard and brain-wrecking issues
 
 *********
 ## Skills 
-+ Data Analysis
-+ Python, R
-+ Frontend development
-+ HTML, CSS, JS
-+ Git
-+ Linux
+* Data Analysis
+* Python, R
+* Frontend development
+* HTML, CSS, JS
+* Git
+* Linux
 
 *********
 ## Code examples
