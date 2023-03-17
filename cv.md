@@ -1,6 +1,7 @@
 # Ekaterina Radchenko
 ## Contacts
 **Email**: ekaterinaradchenko@yahoo.com
+
 **Telegram**: cryingsealpup
 
 
@@ -19,7 +20,7 @@ Diligent and study passioned. Ready to hard and brain-wrecking issues
 
 ## Code examples
 ![This is only to have something here](code_block.svg)
-
+Click and checkout the raw image
 
 ## Employment history
 ### System Administrator (2021-2022)
@@ -30,4 +31,5 @@ Diligent and study passioned. Ready to hard and brain-wrecking issues
 
 ## Languages
 **English**: B2
+
 **German**: A2 
