@@ -1,0 +1,57 @@
+<svg fill="none" viewBox="0 0 320 140" width="320" height="140" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+.block {
+  display: flex;
+  width: 18.5rem;
+  height: 7.4rem;
+  font-family: monospace;
+  background-color: #F7D716;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+.block__status {
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  padding: 1rem 0 0 0;
+  font-weight: 600;
+  background-color: #F24C4C;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.block__description {
+  font-weight: 600;
+}
+.block__title {
+  margin: 0;
+}
+.block__info {
+  padding: 1rem;
+}
+.block::before {
+  content: "";
+  position: absolute;
+  width: 18.9rem;
+  height: 7.7rem;
+  z-index: -1;
+  filter: blur(0.4rem);
+}
+.block:hover::before {
+  background: linear-gradient(45deg, #F24C4C, #002366);
+}/*# sourceMappingURL=style.css.map */
+      </style>
+
+<div class="container">
+    <div class="block">
+        <div class="block__status">no support</div>
+        <div class="block__info">
+            <h1 class="block__title">Webflow</h1>
+            <div class="block__description">Webflow is a web-based tool combining code and frontend editing. Learn how
+                to use AVIF images.</div>
+        </div>
+    </div>
+</div>
+</div>
+  </foreignObject>
+</svg>
