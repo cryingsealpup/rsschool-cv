@@ -19,7 +19,7 @@ Diligent and study passioned. Ready to hard and brain-wrecking issues
 
 *********
 ## Code examples
-![](code_block.svg)
+![This is only to have something here](code_block.svg)
 
 *********
 ## Employment history
