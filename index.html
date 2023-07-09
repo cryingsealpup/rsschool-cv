@@ -26,9 +26,9 @@
         <nav class="menu__links">
             <li class="menu__item"> <a href="#about">About</a></li>
             <li class="menu__item"><a href="#skills">Skills & languages</a></li>
-            <li class="menu__item"><a href="#about">Code samples</a></li>
-            <li class="menu__item"><a href="#about">Contact me</a></li>
-
+            <li class="menu__item"><a href="#code">Code samples</a></li>
+            <li class="menu__item"><a href="#projects">Projects</a></li>
+            <li class="menu__item"><a href="#contacts">Contact me</a></li>
         </nav>
     </section>
     <header class="header">
@@ -47,34 +47,38 @@
                     JS / Python
                 </li>
             </ul>
-            <div class="header__see-more">
+            <!-- <div class="header__see-more">
                 <p class="more">
                     See more
                 </p>
-            </div>
+            </div> -->
         </h1>
 
         <div class="header__decoration decoration-right">
             <svg class='triangle-header' viewBox="0 0 487 763" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.42881 760.281L482.997 761.912L485.568 2.63081L1.42881 760.281Z" fill="black" stroke="white"/>
-            </svg>            
+                <path d="M1.42881 760.281L482.997 761.912L485.568 2.63081L1.42881 760.281Z" fill="black"
+                    stroke="white" />
+            </svg>
         </div>
 
     </header>
 
     <main class="main">
         <div class="about" id="about">
-            <h2>
-                About me
-            </h2>
-            <div class="about__text">
-                I’m an IT enthusiast with different expirience. Have gratuated with master degree in Applied
-                Informatics. My employement history and universirty education gave me wide range of known technoligies
-                and used instruments. Note: this CV created for study purposes only.
+            <div class="about__wrapper">
+                <h2>
+                    About me
+                </h2>
+                <div class="about__info">
+                    <p>
+                        I’m an IT enthusiast with different experiences. I graduated with a master's degree in Applied
+                        Informatics. My employment history and university education gave me a wide range of known
+                        technologies and used instruments. Note: This CV was created for study purposes only.
+                    </p>
+                    <img src="assets\img\me.png" alt="My photo / Ekaterina Radchenko Portfolio pic">
+                </div>
             </div>
-            <div class="about__img">
-                <img src="" alt="">
-            </div>
+        </div>
         </div>
         <div class="stack" id="skills">
             <div class="skills">
@@ -131,26 +135,83 @@
                     </li>
                 </ul>
             </div>
-            <div class="interests">
+            <div class="education">
                 <h2>
-                    Interests
+                    Education
                 </h2>
                 <ul class="stack-list">
                     <li>
-                        WEB
+                        Bachelor of Bussines Informatics
                     </li>
                     <li>
-                        Machine learning
-                    </li>
-                    <li>
-                        Big data
+                        Master of Applied Informatics
                     </li>
                 </ul>
             </div>
         </div>
+        <div class="samples" id="code">
+            <h2> Code </h2>
+            <pre>
+                <code>
+                    function getLengthOfMissingArray(arrayOfArrays) {
+                        if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
+                          return 0;
+                        }
+                        let lengths = [];
+                        for (let array of arrayOfArrays) {
+                          if (!(Array.isArray(array) && array.length)) {
+                            return 0;
+                          }
+                          lengths.push(array.length);
+                        }
+                        for (let i = Math.min(...lengths); i <= Math.max(...lengths); i++) {
+                          if (!(lengths.includes(i))) {
+                            return i;
+                          }
+                        }
+                      }
+                </code>
+            </pre>
+        </div>
+        <div class="projects" id="projects">
+            <h2> Projects </h2>
+            <ul>
+                <li>
+                    <p><a href="https://github.com/cryingsealpup/MatchGame"> C# MatchGame </a></p>
+                </li>
+                <li>
+                    <p><a href="https://github.com/cryingsealpup/email-client"> Mass text messaging app</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts" id="contacts">
+            <h2>
+                Reach me out
+            </h2>
+            <p>
+                I can help design and build you next website. Don’t hesitate to contact me.
+            </p>
+            <h2>
+                Email
+            </h2>
+            <p>
+                <a href="mailto:ekaterinaradchenko@yahoo.com"> ekaterinaradchenko@yahoo.com </a>
+            </p>
+            <h2>
+                On the Internet
+            </h2>
+            <ul>
+                <li><a href="https://github.com/cryingsealpup">Github</a></li>
+                <li><a href="http://">Dribble</a></li>
+            </ul>
+        </div>
     </main>
     <footer class="footer">
-
+        <p> © 2023 Ekaterina Radchenko</p>
+        <div> 
+            <a href="https://rs.school/js"><img src="assets/img/rs_school_js.svg" alt="RS School link"></a>
+            <a href="https://github.com/cryingsealpup"><img src="assets/img/GitHub_Logo.png" alt="Github link"></a>
+        </div>
     </footer>
 </body>
 

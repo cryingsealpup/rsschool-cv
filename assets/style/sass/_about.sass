@@ -1,4 +1,26 @@
 .about
-    background: black
+    &__wrapper
+        background: black
+        padding-top: 4rem
     color: white
-    display: flex
+    display: grid
+    height: 100%
+    &__info, h2 
+        padding-left: 30rem 
+        width: 33rem
+    &::after 
+        content: ""
+        height: 10rem
+        width: 100%
+        background: black
+        -webkit-clip-path: polygon(0 91%, 100% 0, 0 0%)
+        clip-path: polygon(0 91%, 100% 0, 0 0%)
+    &__info
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        gap: 3rem
+        img
+            object-fit: cover
+            width: 10rem
+            height: 10rem
