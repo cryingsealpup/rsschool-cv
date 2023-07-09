@@ -83,7 +83,6 @@
                 </div>
             </div>
         </div>
-        </div>
         <div class="stack" id="skills">
             <div class="skills">
                 <h2>
@@ -168,7 +167,7 @@
                           }
                           lengths.push(array.length);
                         }
-                        for (let i = Math.min(...lengths); i <= Math.max(...lengths); i++) {
+                        for (let i = Math.min(...lengths); i &lt;= Math.max(...lengths); i++) {
                           if (!(lengths.includes(i))) {
                             return i;
                           }
