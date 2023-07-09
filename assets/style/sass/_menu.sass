@@ -1,0 +1,29 @@
+.menu
+    text-transform: uppercase
+    font-size: 1rem
+    font-weight: 100
+    &__links
+        position: fixed
+        display: flex
+        list-style: none
+        flex-direction: column
+        top: 20%
+        z-index: 5
+        height: 100vh
+        mix-blend-mode: difference
+        color: white
+        font-weight: light
+        width: 30vw
+        align-content: center
+        flex-wrap: wrap
+    &__item
+        a
+            color: inherit
+            text-decoration: none
+        transition: 0.5s ease
+        &:hover
+            transition: 0.5s ease
+            transform: skewX(-10deg)
+            font-weight: 400
+            margin-left: 0.5rem
+                

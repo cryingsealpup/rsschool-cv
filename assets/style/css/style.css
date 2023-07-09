@@ -1,0 +1,124 @@
+.header {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: white;
+}
+.header__title {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 auto;
+  z-index: 0;
+  flex: 1 1 0;
+}
+.header__more-info {
+  font-size: 1rem;
+  font-weight: 300;
+  width: fit-content;
+  padding-left: 0;
+  list-style: none;
+}
+.header__decoration {
+  content: "";
+  height: 100vh;
+  left: 0;
+  z-index: 2;
+  flex: 2 1 0;
+}
+.header__decoration.decoration-left {
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  background: black;
+  top: 0;
+}
+.header__decoration.decoration-right {
+  width: 90vh;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 100%, 100% 100%, 100% 0);
+  background: black;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* align-content: flex-end; */
+}
+.header__see-more {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.header__see-more:hover {
+  width: 10rem;
+  height: 8rem;
+  border-style: solid;
+  border-bottom: solid 1px transparent;
+  border-top: solid 1px white;
+  border-left: solid 1px transparent;
+  border-right: solid 1px transparent;
+}
+
+.triangle-header {
+  width: 100%;
+  /* transform: rotateX(60deg); */
+  /* left: 0; */
+  /* top: 0; */
+  /* height: 100%; */
+  z-index: 3;
+}
+
+svg.triangle-header {}
+
+body {
+  font-size: 2rem;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.menu__links {
+  position: fixed;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  top: 20%;
+  z-index: 5;
+  height: 100vh;
+  mix-blend-mode: difference;
+  color: white;
+  font-weight: light;
+  width: 30vw;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.menu__item {
+  transition: 0.5s ease;
+}
+.menu__item a {
+  color: inherit;
+  text-decoration: none;
+}
+.menu__item:hover {
+  transition: 0.5s ease;
+  transform: skewX(-10deg);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.about {
+  background: black;
+  color: white;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
