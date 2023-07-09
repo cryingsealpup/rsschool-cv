@@ -64,6 +64,11 @@ body {
   margin: 0;
   height: 100%;
   background: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 html {
