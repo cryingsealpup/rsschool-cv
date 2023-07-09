@@ -8,18 +8,27 @@
 .header__title {
   font-size: 2rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 100;
+  text-transform: uppercase;
   width: fit-content;
-  margin: 0 auto;
+  margin: 1rem auto;
   z-index: 0;
   flex: 1 1 0;
 }
+.header a {
+  text-decoration: none;
+}
+.header a:hover {
+  color: black;
+}
 .header__more-info {
   font-size: 1rem;
-  font-weight: 300;
   width: fit-content;
   padding-left: 0;
   list-style: none;
+}
+.header__more-info li {
+  font-weight: 300;
 }
 .header__decoration {
   content: "";
@@ -29,10 +38,9 @@
   flex: 2 1 0;
 }
 .header__decoration.decoration-left {
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-  clip-path: polygon(0 0, 0% 100%, 100% 0);
-  background: black;
+  background: url(../../img/triangles/big_main.svg);
   top: 0;
+  background-size: 100% 100%;
 }
 .header__decoration.decoration-right {
   width: 90vh;
@@ -44,15 +52,18 @@
   display: flex;
   font-size: 1rem;
   font-weight: 300;
+  height: 5rem;
+  width: 20rem;
+  -webkit-transition: background-image 0.5s linear;
+  -moz-transition: background-image 0.5s linear;
+  -ms-transition: background-image 0.5s linear;
+  transition: background-image 0.5s linear;
+  justify-content: center;
+  margin-top: 2rem;
 }
 .header__see-more:hover {
-  width: 10rem;
-  height: 8rem;
-  border-style: solid;
-  border-bottom: solid 1px transparent;
-  border-top: solid 1px white;
-  border-left: solid 1px transparent;
-  border-right: solid 1px transparent;
+  background-image: url(../../img/triangles/more.svg);
+  background-size: 100% 100%;
 }
 
 .triangle-header {
@@ -132,13 +143,13 @@ a:hover {
   display: flex;
   list-style: none;
   flex-direction: column;
-  top: 20%;
+  top: 23%;
   z-index: 5;
   height: 100vh;
   mix-blend-mode: difference;
   color: white;
   font-weight: light;
-  width: 30vw;
+  width: 28vw;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -150,7 +161,7 @@ a:hover {
   color: inherit;
   text-decoration: none;
 }
-.menu__item:hover {
+.menu__item:hover, .menu__item:target {
   transition: 0.5s ease;
   transform: skewX(-10deg);
   font-weight: 400;

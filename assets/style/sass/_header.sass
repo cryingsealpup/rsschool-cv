@@ -7,18 +7,24 @@
     &__title
         font-size: 2rem
         font-style: italic
-        font-weight: 600
+        font-weight: 100
+        text-transform: uppercase
         width: fit-content
-        margin: 0 auto
+        margin: 1rem auto
         z-index: 0
         flex: 1 1 0
-
+            
+    a
+        text-decoration: none
+        &:hover
+            color: black
     &__more-info
         font-size: 1rem
-        font-weight: 300
         width: fit-content
         padding-left: 0
         list-style: none
+        li
+            font-weight: 300
     &__decoration
         content: ""
         height: 100vh
@@ -26,10 +32,9 @@
         z-index: 2
         flex: 2 1 0
     &__decoration.decoration-left
-        -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0)
-        clip-path: polygon(0 0, 0% 100%, 100% 0)
-        background: black
+        background: url(../../img/triangles/big_main.svg)
         top: 0
+        background-size: 100% 100%
 
     &__decoration.decoration-right
         width: 90vh
@@ -40,14 +45,18 @@
         display: flex
         font-size: 1rem
         font-weight: 300
+        height: 5rem
+        width: 20rem
+        -webkit-transition: background-image 0.5s linear
+        -moz-transition: background-image 0.5s linear
+        -ms-transition: background-image 0.5s linear
+        transition: background-image 0.5s linear
+        justify-content: center
+        margin-top: 2rem
+
         &:hover
-            width: 10rem
-            height: 8rem
-            border-style: solid
-            border-bottom: solid 1px transparent
-            border-top: solid 1px white
-            border-left: solid 1px transparent
-            border-right: solid 1px transparent
+            background-image: url(../../img/triangles/more.svg)
+            background-size: 100% 100%
 .triangle
     &-header
         width: 100%
