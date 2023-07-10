@@ -71,8 +71,15 @@
 }
 
 @media (max-width: 48em) {
+  .header-wrapper {
+    padding: 4rem 2rem;
+  }
   .header__decoration.decoration-left, .header__decoration.decoration-right {
     display: none;
+  }
+  .header__see-more {
+    width: 15rem;
+    background-image: url(../../img/triangles/more.svg);
   }
 }
 body {
@@ -88,6 +95,11 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 48em) {
+  body {
+    flex-wrap: nowrap;
+  }
+}
 main {
   overflow: hidden;
   width: 100%;
@@ -176,14 +188,20 @@ a:hover {
   font-weight: 400;
   margin-left: 0.5rem;
 }
+
 @media (max-width: 48em) {
-  .menu .menu__links {
+  .menu {
+    display: none;
+    width: 100%;
+  }
+  .menu__links ul {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     top: 0;
     width: 100%;
   }
 }
-
 .about {
   color: white;
   display: grid;
@@ -220,6 +238,14 @@ a:hover {
   height: 10rem;
 }
 
+@media (max-width: 48em) {
+  .about__info {
+    flex-direction: column;
+  }
+  .about__info, .about h2 {
+    width: 100%;
+  }
+}
 .stack {
   margin: 0 auto;
   width: 40%;
@@ -234,6 +260,17 @@ a:hover {
   width: 25rem;
 }
 
+@media (max-width: 48em) {
+  .stack {
+    width: 100%;
+    padding: 0 2rem 2rem;
+    grid-template-rows: none;
+    grid-template-columns: none;
+  }
+  .stack-list {
+    width: 100%;
+  }
+}
 .contacts {
   display: flex;
   flex-direction: column;
@@ -251,6 +288,16 @@ a:hover {
   border: 0.3rem dotted;
 }
 
+@media (max-width: 48em) {
+  .contacts-wrapper {
+    width: fit-content;
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  .contacts h2 {
+    width: 100%;
+  }
+}
 .projects {
   margin-top: 3rem;
   display: flex;
@@ -267,6 +314,15 @@ a:hover {
   object-fit: cover;
 }
 
+@media (max-width: 48em) {
+  .projects {
+    align-items: flex-start;
+  }
+  .projects-wrapper {
+    width: max-content;
+    margin-left: 3rem;
+  }
+}
 .samples {
   color: white;
   width: 100%;

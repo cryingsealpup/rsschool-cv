@@ -36,7 +36,7 @@
     <header class="header">
         <div class="header__decoration decoration-left">
         </div>
-        <div>
+        <div class="header-wrapper">
             <h1 class="header__title">
                 Ekaterina Radchenko
             </h1>
@@ -159,21 +159,21 @@
                     <code>
                         function getLengthOfMissingArray(arrayOfArrays) {
                             if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
-                            return 0;
+                              return 0;
                             }
                             let lengths = [];
                             for (let array of arrayOfArrays) {
-                            if (!(Array.isArray(array) && array.length)) {
+                              if (!(Array.isArray(array) && array.length)) {
                                 return 0;
+                              }
+                              lengths.push(array.length);
                             }
-                            lengths.push(array.length);
-                            }
-                            for (let i = Math.min(...lengths); i &lt;= Math.max(...lengths); i++) {
-                            if (!(lengths.includes(i))) {
+                            for (let i = Math.min(...lengths); i <= Math.max(...lengths); i++) {
+                              if (!(lengths.includes(i))) {
                                 return i;
+                              }
                             }
-                            }
-                        }
+                          }
                     </code>
                 </pre>
             </div>
