@@ -88,6 +88,11 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
 html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
