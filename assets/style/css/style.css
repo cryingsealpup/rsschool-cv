@@ -70,9 +70,15 @@
   width: 100%;
 }
 
+@media (max-width: 48em) {
+  .header__decoration.decoration-left, .header__decoration.decoration-right {
+    display: none;
+  }
+}
 body {
   font-size: 2rem;
   margin: 0;
+  width: 100%;
   height: 100%;
   background: white;
   display: flex;
@@ -164,6 +170,13 @@ a:hover {
   transform: skewX(-10deg);
   font-weight: 400;
   margin-left: 0.5rem;
+}
+@media (max-width: 48em) {
+  .menu .menu__links {
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+  }
 }
 
 .about {
