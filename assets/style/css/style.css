@@ -71,8 +71,13 @@
 }
 
 @media (max-width: 48em) {
+  .header {
+    justify-content: center;
+    height: 100vh;
+  }
   .header-wrapper {
     padding: 4rem 2rem;
+    width: min-content;
   }
   .header__decoration.decoration-left, .header__decoration.decoration-right {
     display: none;
@@ -243,7 +248,11 @@ a:hover {
     flex-direction: column;
   }
   .about__info, .about h2 {
-    width: 100%;
+    width: unset;
+    padding: 0 2rem;
+  }
+  .about::after {
+    margin-top: -0.1rem;
   }
 }
 .stack {
