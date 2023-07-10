@@ -212,6 +212,9 @@ a:hover {
   background: white;
   row-gap: 3rem;
 }
+.stack-list {
+  width: 25rem;
+}
 
 .contacts {
   display: flex;
@@ -278,12 +281,16 @@ a:hover {
 }
 
 .footer {
-  display: flex;
   padding: 0.5rem 10rem;
-  justify-content: space-around;
   font-size: 0.8rem;
   border-top: 0.1rem solid black;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  max-width: 129rem;
+  margin: 0 auto;
 }
 .footer object, .footer img {
   height: 2rem;
