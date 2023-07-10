@@ -153,60 +153,66 @@
             </div>
         </div>
         <div class="samples" id="code">
-            <h2> Code </h2>
-            <pre>
-                <code>
-                    function getLengthOfMissingArray(arrayOfArrays) {
-                        if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
-                          return 0;
-                        }
-                        let lengths = [];
-                        for (let array of arrayOfArrays) {
-                          if (!(Array.isArray(array) && array.length)) {
+            <div class="samples-wrapper"> 
+                <h2> Code </h2>
+                <pre>
+                    <code>
+                        function getLengthOfMissingArray(arrayOfArrays) {
+                            if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
                             return 0;
-                          }
-                          lengths.push(array.length);
+                            }
+                            let lengths = [];
+                            for (let array of arrayOfArrays) {
+                            if (!(Array.isArray(array) && array.length)) {
+                                return 0;
+                            }
+                            lengths.push(array.length);
+                            }
+                            for (let i = Math.min(...lengths); i &lt;= Math.max(...lengths); i++) {
+                            if (!(lengths.includes(i))) {
+                                return i;
+                            }
+                            }
                         }
-                        for (let i = Math.min(...lengths); i &lt;= Math.max(...lengths); i++) {
-                          if (!(lengths.includes(i))) {
-                            return i;
-                          }
-                        }
-                      }
-                </code>
-            </pre>
+                    </code>
+                </pre>
+            </div>
         </div>
         <div class="projects" id="projects">
-            <h2> Projects </h2>
-            <ul>
-                <li>
-                    <p><a href="https://github.com/cryingsealpup/MatchGame"> C# MatchGame </a></p>
-                </li>
-                <li>
-                    <p><a href="https://github.com/cryingsealpup/email-client"> Mass text messaging app</a></p>
-                </li>
-            </ul>
+            <div class="projects-wrapper">
+                <h2> Projects </h2>
+                <ul>
+                    <li>
+                        <p><a href="https://github.com/cryingsealpup/MatchGame"> C# MatchGame </a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/cryingsealpup/email-client"> Mass text messaging app</a></p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="contacts" id="contacts">
-            <h2>
-                Reach me out
-            </h2>
-            <p>
-                I can help design and build you next website. Don’t hesitate to contact me.
-            </p>
-            <h2>
-                Email
-            </h2>
-            <p>
-                <a href="mailto:ekaterinaradchenko@yahoo.com"> ekaterinaradchenko@yahoo.com </a>
-            </p>
-            <h2>
-                On the Internet
-            </h2>
-            <ul>
-                <li><a href="https://github.com/cryingsealpup">Github</a></li>
-                <li><a href="https://dribbble.com/cryingsealpup">Dribbble</a></li>
-            </ul>
+            <div class="contacts-wrapper">
+                <h2>
+                    Reach me out
+                </h2>
+                <p>
+                    I can help design and build you next website. Don’t hesitate to contact me.
+                </p>
+                <h3>
+                    Email
+                </h3>
+                <p>
+                    <a href="mailto:ekaterinaradchenko@yahoo.com"> ekaterinaradchenko@yahoo.com </a>
+                </p>
+                <h3>
+                    On the Internet
+                </h3>
+                <ul>
+                    <li><a href="https://github.com/cryingsealpup">Github</a></li>
+                    <li><a href="https://dribbble.com/cryingsealpup">Dribbble</a></li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer class="footer">
