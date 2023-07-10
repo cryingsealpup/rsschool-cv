@@ -281,7 +281,7 @@ a:hover {
 .footer {
   display: flex;
   padding: 0.5rem 10rem;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 0.8rem;
   border-top: 0.1rem solid black;
   align-items: center;
