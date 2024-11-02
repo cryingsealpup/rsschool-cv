@@ -26,7 +26,7 @@
         <nav class="menu__links">
             <ul>
                 <li class="menu__item"> <a href="#about">About</a></li>
-                <li class="menu__item"><a href="#skills">Skills & languages</a></li>
+                <li class="menu__item"><a href="#skills">Skills &amp; languages</a></li>
                 <li class="menu__item"><a href="#code">Code samples</a></li>
                 <li class="menu__item"><a href="#projects">Projects</a></li>
                 <li class="menu__item"><a href="#contacts">Contact me</a></li>
@@ -42,7 +42,7 @@
             </h1>
             <ul class="header__more-info">
                 <li>
-                    fullstack developer 
+                    fullstack developer
                 </li>
                 <li>
                     frontend / backend
@@ -51,15 +51,17 @@
                     JS / Python
                 </li>
             </ul>
-                <a href="#about"><div class="header__see-more">
+            <a href="#about">
+                <div class="header__see-more">
                     <p class="more">
                         See more
                     </p>
-                </div></a>
+                </div>
+            </a>
         </div>
 
         <div class="header__decoration decoration-right">
-            <svg class='triangle-header' viewBox="0 0 487 763" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="triangle-header" viewBox="0 0 487 763" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.42881 760.281L482.997 761.912L485.568 2.63081L1.42881 760.281Z" fill="black"
                     stroke="white" />
             </svg>
@@ -153,17 +155,17 @@
             </div>
         </div>
         <div class="samples" id="code">
-            <div class="samples-wrapper"> 
+            <div class="samples-wrapper">
                 <h2> Code </h2>
                 <pre>
                     <code>
                         function getLengthOfMissingArray(arrayOfArrays) {
-                            if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
+                            if (!(Array.isArray(arrayOfArrays) &amp;&amp; arrayOfArrays.length)) {
                               return 0;
                             }
                             let lengths = [];
                             for (let array of arrayOfArrays) {
-                              if (!(Array.isArray(array) && array.length)) {
+                              if (!(Array.isArray(array) &amp;&amp; array.length)) {
                                 return 0;
                               }
                               lengths.push(array.length);
@@ -218,7 +220,7 @@
     <footer class="footer">
         <div class="footer-wrapper">
             <p> © 2023 Ekaterina Radchenko</p>
-            <div> 
+            <div>
                 <a href="https://rs.school/js"><img src="assets/img/rs_school_js.svg" alt="RS School link"></a>
                 <a href="https://github.com/cryingsealpup"><img src="assets/img/GitHub_Logo.png" alt="Github link"></a>
             </div>
