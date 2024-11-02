@@ -27,7 +27,6 @@
             <ul>
                 <li class="menu__item"> <a href="#about">About</a></li>
                 <li class="menu__item"><a href="#skills">Skills &amp; languages</a></li>
-                <li class="menu__item"><a href="#code">Code samples</a></li>
                 <li class="menu__item"><a href="#projects">Projects</a></li>
                 <li class="menu__item"><a href="#contacts">Contact me</a></li>
             </ul>
@@ -152,32 +151,6 @@
                         Master of Applied Informatics
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="samples" id="code">
-            <div class="samples-wrapper">
-                <h2> Code </h2>
-                <pre>
-                    <code>
-                        function getLengthOfMissingArray(arrayOfArrays) {
-                            if (!(Array.isArray(arrayOfArrays) &amp;&amp; arrayOfArrays.length)) {
-                              return 0;
-                            }
-                            let lengths = [];
-                            for (let array of arrayOfArrays) {
-                              if (!(Array.isArray(array) &amp;&amp; array.length)) {
-                                return 0;
-                              }
-                              lengths.push(array.length);
-                            }
-                            for (let i = Math.min(...lengths); i &lt; &lt; Math.max(...lengths); i++) {
-                              if (!(lengths.includes(i))) {
-                                return i;
-                              }
-                            }
-                          }
-                    </code>
-                </pre>
             </div>
         </div>
         <div class="projects" id="projects">
