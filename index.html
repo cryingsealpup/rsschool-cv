@@ -22,23 +22,27 @@
 </head>
 
 <body>
-    <section class="menu">
+    <div class="menu">
         <nav class="menu__links">
-            <li class="menu__item"> <a href="#about">About</a></li>
-            <li class="menu__item"><a href="#skills">Skills & languages</a></li>
-            <li class="menu__item"><a href="#code">Code samples</a></li>
-            <li class="menu__item"><a href="#projects">Projects</a></li>
-            <li class="menu__item"><a href="#contacts">Contact me</a></li>
+            <ul>
+                <li class="menu__item"> <a href="#about">About</a></li>
+                <li class="menu__item"><a href="#skills">Skills &amp; languages</a></li>
+                <li class="menu__item"><a href="#code">Code samples</a></li>
+                <li class="menu__item"><a href="#projects">Projects</a></li>
+                <li class="menu__item"><a href="#contacts">Contact me</a></li>
+            </ul>
         </nav>
-    </section>
+    </div>
     <header class="header">
         <div class="header__decoration decoration-left">
         </div>
-        <h1 class="header__title">
-            Ekaterina Radchenko
+        <div class="header-wrapper">
+            <h1 class="header__title">
+                Ekaterina Radchenko
+            </h1>
             <ul class="header__more-info">
                 <li>
-                    web developer
+                    fullstack developer
                 </li>
                 <li>
                     frontend / backend
@@ -47,15 +51,17 @@
                     JS / Python
                 </li>
             </ul>
-            <!-- <div class="header__see-more">
-                <p class="more">
-                    See more
-                </p>
-            </div> -->
-        </h1>
+            <a href="#about">
+                <div class="header__see-more">
+                    <p class="more">
+                        See more
+                    </p>
+                </div>
+            </a>
+        </div>
 
         <div class="header__decoration decoration-right">
-            <svg class='triangle-header' viewBox="0 0 487 763" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="triangle-header" viewBox="0 0 487 763" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.42881 760.281L482.997 761.912L485.568 2.63081L1.42881 760.281Z" fill="black"
                     stroke="white" />
             </svg>
@@ -75,10 +81,9 @@
                         Informatics. My employment history and university education gave me a wide range of known
                         technologies and used instruments. Note: This CV was created for study purposes only.
                     </p>
-                    <img src="assets\img\me.png" alt="My photo / Ekaterina Radchenko Portfolio pic">
+                    <img src="assets/img/me.png" alt="My portfolio pic">
                 </div>
             </div>
-        </div>
         </div>
         <div class="stack" id="skills">
             <div class="skills">
@@ -150,67 +155,75 @@
             </div>
         </div>
         <div class="samples" id="code">
-            <h2> Code </h2>
-            <pre>
-                <code>
-                    function getLengthOfMissingArray(arrayOfArrays) {
-                        if (!(Array.isArray(arrayOfArrays) && arrayOfArrays.length)) {
-                          return 0;
-                        }
-                        let lengths = [];
-                        for (let array of arrayOfArrays) {
-                          if (!(Array.isArray(array) && array.length)) {
-                            return 0;
+            <div class="samples-wrapper">
+                <h2> Code </h2>
+                <pre>
+                    <code>
+                        function getLengthOfMissingArray(arrayOfArrays) {
+                            if (!(Array.isArray(arrayOfArrays) &amp;&amp; arrayOfArrays.length)) {
+                              return 0;
+                            }
+                            let lengths = [];
+                            for (let array of arrayOfArrays) {
+                              if (!(Array.isArray(array) &amp;&amp; array.length)) {
+                                return 0;
+                              }
+                              lengths.push(array.length);
+                            }
+                            for (let i = Math.min(...lengths); i &lt; Math.max(...lengths); i++) {
+                              if (!(lengths.includes(i))) {
+                                return i;
+                              }
+                            }
                           }
-                          lengths.push(array.length);
-                        }
-                        for (let i = Math.min(...lengths); i <= Math.max(...lengths); i++) {
-                          if (!(lengths.includes(i))) {
-                            return i;
-                          }
-                        }
-                      }
-                </code>
-            </pre>
+                    </code>
+                </pre>
+            </div>
         </div>
         <div class="projects" id="projects">
-            <h2> Projects </h2>
-            <ul>
-                <li>
-                    <p><a href="https://github.com/cryingsealpup/MatchGame"> C# MatchGame </a></p>
-                </li>
-                <li>
-                    <p><a href="https://github.com/cryingsealpup/email-client"> Mass text messaging app</a></p>
-                </li>
-            </ul>
+            <div class="projects-wrapper">
+                <h2> Projects </h2>
+                <ul>
+                    <li>
+                        <p><a href="https://github.com/cryingsealpup/MatchGame"> C# MatchGame </a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://github.com/cryingsealpup/email-client"> Mass text messaging app</a></p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="contacts" id="contacts">
-            <h2>
-                Reach me out
-            </h2>
-            <p>
-                I can help design and build you next website. Don’t hesitate to contact me.
-            </p>
-            <h2>
-                Email
-            </h2>
-            <p>
-                <a href="mailto:ekaterinaradchenko@yahoo.com"> ekaterinaradchenko@yahoo.com </a>
-            </p>
-            <h2>
-                On the Internet
-            </h2>
-            <ul>
-                <li><a href="https://github.com/cryingsealpup">Github</a></li>
-                <li><a href="http://">Dribble</a></li>
-            </ul>
+            <div class="contacts-wrapper">
+                <h2>
+                    Reach me out
+                </h2>
+                <p>
+                    I can help design and build you next website. Don’t hesitate to contact me.
+                </p>
+                <h3>
+                    Email
+                </h3>
+                <ul>
+                    <li><a href="mailto:ekaterinaradchenko@yahoo.com"> ekaterinaradchenko@yahoo.com </a></li>
+                </ul>
+                <h3>
+                    On the Internet
+                </h3>
+                <ul>
+                    <li><a href="https://github.com/cryingsealpup">Github</a></li>
+                    <li><a href="https://dribbble.com/cryingsealpup">Dribbble</a></li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer class="footer">
-        <p> © 2023 Ekaterina Radchenko</p>
-        <div> 
-            <a href="https://rs.school/js"><img src="assets/img/rs_school_js.svg" alt="RS School link"></a>
-            <a href="https://github.com/cryingsealpup"><img src="assets/img/GitHub_Logo.png" alt="Github link"></a>
+        <div class="footer-wrapper">
+            <p> © 2023 Ekaterina Radchenko</p>
+            <div>
+                <a href="https://rs.school/js"><img src="assets/img/rs_school_js.svg" alt="RS School link"></a>
+                <a href="https://github.com/cryingsealpup"><img src="assets/img/GitHub_Logo.png" alt="Github link"></a>
+            </div>
         </div>
     </footer>
 </body>
